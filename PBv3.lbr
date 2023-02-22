@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="PIXELBLAZE-V3">
+<description>Pixelblaxe v3, for integration into PCB</description>
+<rectangle x1="0" y1="0" x2="40" y2="28" layer="39"/>
+<rectangle x1="13.97" y1="27.94" x2="34.29" y2="34.29" layer="39"/>
+<wire x1="0" y1="0" x2="0" y2="27.94" width="0.127" layer="21"/>
+<wire x1="0" y1="27.94" x2="13.97" y2="27.94" width="0.127" layer="21"/>
+<wire x1="13.97" y1="27.94" x2="13.97" y2="34.29" width="0.127" layer="21"/>
+<wire x1="13.97" y1="34.29" x2="34.29" y2="34.29" width="0.127" layer="21"/>
+<wire x1="34.29" y1="34.29" x2="34.29" y2="27.94" width="0.127" layer="21"/>
+<wire x1="34.29" y1="27.94" x2="40.64" y2="27.94" width="0.127" layer="21"/>
+<wire x1="40.64" y1="27.94" x2="40.64" y2="0" width="0.127" layer="21"/>
+<wire x1="40.64" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="PB-GND" x="7" y="8" drill="0.8"/>
+<pad name="PB-DAT" x="7" y="10.5" drill="0.8"/>
+<pad name="PB-CLK" x="7" y="13" drill="0.8"/>
+<pad name="PB-VIN" x="7" y="15.5" drill="0.8"/>
+<pad name="PB-RST" x="37.5" y="8.5" drill="0.8"/>
+<pad name="PB-GND2" x="37.5" y="6" drill="0.8"/>
+<pad name="PB-3V3" x="37.5" y="11" drill="0.8"/>
+<pad name="PB-RX" x="37.5" y="13.5" drill="0.8"/>
+<pad name="PB-TX" x="37.5" y="16" drill="0.8"/>
+<pad name="PB-IO0" x="37.5" y="18.5" drill="0.8"/>
+<pad name="PB-IO25" x="37.5" y="21" drill="0.8"/>
+<pad name="PB-IO26" x="37.5" y="23.5" drill="0.8"/>
+<pad name="PB-BTN" x="5.5" y="23.5" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-3V3-2" x="20.5" y="11" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-GND3" x="20.5" y="13.5" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-IO13" x="20.5" y="16" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-IO27" x="20.5" y="18.5" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-IO33" x="20.5" y="21" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-IO22" x="20.5" y="23.5" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-5V" x="25.5" y="11" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-IO2" x="25.5" y="13.5" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-IO4" x="25.5" y="16" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-IO14" x="25.5" y="18.5" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-IO19" x="25.5" y="21" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="PB-IO21" x="25.5" y="23.5" drill="0.8" diameter="1.778" shape="long"/>
+<text x="8" y="23" size="1.016" layer="21">BTN</text>
+<text x="3" y="15" size="1.016" layer="21">5vIN</text>
+<text x="3" y="12.5" size="1.016" layer="21">CLK</text>
+<text x="3" y="10" size="1.016" layer="21">DAT</text>
+<text x="2.5" y="7.5" size="1.016" layer="21">GND</text>
+<text x="16" y="13" size="0.8128" layer="21">GND</text>
+<text x="28" y="10.5" size="0.8128" layer="21">5v</text>
+<text x="28" y="13" size="0.8128" layer="21">IO2</text>
+<text x="28" y="15.5" size="0.8128" layer="21">IO4</text>
+<text x="28" y="18" size="0.8128" layer="21">IO14</text>
+<text x="28" y="20.5" size="0.8128" layer="21">IO19</text>
+<text x="28" y="23" size="0.8128" layer="21">IO21</text>
+<text x="16" y="23" size="0.8128" layer="21">IO22</text>
+<text x="16" y="20.5" size="0.8128" layer="21">IO33</text>
+<text x="16" y="18" size="0.8128" layer="21">IO27</text>
+<text x="16" y="15.5" size="0.8128" layer="21">IO13</text>
+<text x="16" y="10.5" size="0.8128" layer="21">3.3v</text>
+<text x="34" y="8" size="0.8128" layer="21">RST</text>
+<text x="34" y="5.5" size="0.8128" layer="21">GND</text>
+<text x="34" y="10.5" size="0.8128" layer="21">3.3v</text>
+<text x="35" y="13" size="0.8128" layer="21">Rx</text>
+<text x="35" y="15.5" size="0.8128" layer="21">Tx</text>
+<text x="34.5" y="18" size="0.8128" layer="21">IO0</text>
+<text x="34" y="20.5" size="0.8128" layer="21">IO25</text>
+<text x="34" y="23" size="0.8128" layer="21">IO26</text>
+<text x="16" y="4" size="1.016" layer="21">Pixelblaze V3.4</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PB-V3">
+<wire x1="0" y1="0" x2="116.84" y2="0" width="0.254" layer="94"/>
+<wire x1="116.84" y1="0" x2="116.84" y2="68.58" width="0.254" layer="94"/>
+<wire x1="116.84" y1="68.58" x2="99.06" y2="68.58" width="0.254" layer="94"/>
+<wire x1="99.06" y1="68.58" x2="99.06" y2="81.28" width="0.254" layer="94"/>
+<wire x1="99.06" y1="81.28" x2="55.88" y2="81.28" width="0.254" layer="94"/>
+<wire x1="55.88" y1="81.28" x2="55.88" y2="68.58" width="0.254" layer="94"/>
+<wire x1="55.88" y1="68.58" x2="0" y2="68.58" width="0.254" layer="94"/>
+<wire x1="0" y1="68.58" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="PB-GND" x="-2.54" y="25.4" length="middle"/>
+<pin name="PB-DAT" x="-2.54" y="30.48" length="middle"/>
+<pin name="PB-CLK" x="-2.54" y="35.56" length="middle"/>
+<pin name="PB-VIN" x="-2.54" y="40.64" length="middle"/>
+<pin name="PB-IO26" x="119.38" y="63.5" length="middle" rot="R180"/>
+<pin name="PB-IO25" x="119.38" y="55.88" length="middle" rot="R180"/>
+<pin name="PB-IO0" x="119.38" y="48.26" length="middle" rot="R180"/>
+<pin name="PB-TX" x="119.38" y="40.64" length="middle" rot="R180"/>
+<pin name="PB-RX" x="119.38" y="33.02" length="middle" rot="R180"/>
+<pin name="PB-3V3" x="119.38" y="25.4" length="middle" rot="R180"/>
+<pin name="PB-RST" x="119.38" y="17.78" length="middle" rot="R180"/>
+<pin name="PB-GND2" x="119.38" y="10.16" length="middle" rot="R180"/>
+<pin name="PB-BTN" x="-2.54" y="60.96" length="middle"/>
+<pin name="PB-IO21" x="17.78" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-IO19" x="22.86" y="-2.54" length="middle" rot="R90"/>
+<pin name="PBIO14" x="27.94" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-IO4" x="33.02" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-IO2" x="38.1" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-5V" x="43.18" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-IO22" x="71.12" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-IO33" x="76.2" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-IO27" x="81.28" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-IO13" x="86.36" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-GND3" x="91.44" y="-2.54" length="middle" rot="R90"/>
+<pin name="PB-3V3-2" x="96.52" y="-2.54" length="middle" rot="R90"/>
+<text x="78.74" y="38.1" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PIXELBLAZE-V3.4">
+<gates>
+<gate name="G$1" symbol="PB-V3" x="-73.66" y="-40.64"/>
+</gates>
+<devices>
+<device name="" package="PIXELBLAZE-V3">
+<connects>
+<connect gate="G$1" pin="PB-3V3" pad="PB-3V3"/>
+<connect gate="G$1" pin="PB-3V3-2" pad="PB-3V3-2"/>
+<connect gate="G$1" pin="PB-5V" pad="PB-5V"/>
+<connect gate="G$1" pin="PB-BTN" pad="PB-BTN"/>
+<connect gate="G$1" pin="PB-CLK" pad="PB-CLK"/>
+<connect gate="G$1" pin="PB-DAT" pad="PB-DAT"/>
+<connect gate="G$1" pin="PB-GND" pad="PB-GND"/>
+<connect gate="G$1" pin="PB-GND2" pad="PB-GND2"/>
+<connect gate="G$1" pin="PB-GND3" pad="PB-GND3"/>
+<connect gate="G$1" pin="PB-IO0" pad="PB-IO0"/>
+<connect gate="G$1" pin="PB-IO13" pad="PB-IO13"/>
+<connect gate="G$1" pin="PB-IO19" pad="PB-IO19"/>
+<connect gate="G$1" pin="PB-IO2" pad="PB-IO2"/>
+<connect gate="G$1" pin="PB-IO21" pad="PB-IO21"/>
+<connect gate="G$1" pin="PB-IO22" pad="PB-IO22"/>
+<connect gate="G$1" pin="PB-IO25" pad="PB-IO25"/>
+<connect gate="G$1" pin="PB-IO26" pad="PB-IO26"/>
+<connect gate="G$1" pin="PB-IO27" pad="PB-IO27"/>
+<connect gate="G$1" pin="PB-IO33" pad="PB-IO33"/>
+<connect gate="G$1" pin="PB-IO4" pad="PB-IO4"/>
+<connect gate="G$1" pin="PB-RST" pad="PB-RST"/>
+<connect gate="G$1" pin="PB-RX" pad="PB-RX"/>
+<connect gate="G$1" pin="PB-TX" pad="PB-TX"/>
+<connect gate="G$1" pin="PB-VIN" pad="PB-VIN"/>
+<connect gate="G$1" pin="PBIO14" pad="PB-IO14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
